@@ -1,0 +1,22 @@
+[workspace]
+members = [
+  "src/bastion",
+  "src/bastion-executor",
+  "src/bastion-utils",
+  "src/lightproc"
+]
+
+[profile.bench]
+panic = "unwind"
+opt-level = 3
+debug = false
+rpath = false
+lto = false
+debug-assertions = false
+codegen-units = 1
+
+[profile.dev]
+panic = "unwind"
+
+[profile.release]
+panic = "unwind"
