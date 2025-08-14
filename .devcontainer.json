@@ -1,0 +1,12 @@
+{
+  "name": "Dev Container - aws/jsii",
+  "image": "public.ecr.aws/jsii/superchain:1-bookworm-slim",
+  "containerUser": "superchain",
+  "remoteUser": "superchain",
+  "postCreateCommand": "yarn install",
+  "customizations": {
+    "vscode": {
+      "extensions": ["dbaeumer.vscode-eslint", "Orta.vscode-jest"]
+    }
+  }
+}
